@@ -8,3 +8,5 @@ on:
 jobs:
   call-simple-workflow:
     uses: chickendining/simple-workflow-repo/.github/workflows/simple_workflow.yml@main
+    with:
+      file_path: /config/test1.txt
