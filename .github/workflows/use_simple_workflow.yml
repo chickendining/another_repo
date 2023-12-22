@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-simple-workflow:
-    uses: your-username/simple-workflow-repo/.github/workflows/simple_workflow.yml@main
+    uses: chickendining/simple-workflow-repo/.github/workflows/simple_workflow.yml@main
