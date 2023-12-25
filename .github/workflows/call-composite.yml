@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Call composite workflow
     steps:
-        - uses: chickendining/simple-workflow-repo/.github/actions/sync/action.yml@main
+        - uses: chickendining/simple-workflow-repo/.github/actions/sync@main
           with:
             caller_repo: "chickendining/another_repo"
