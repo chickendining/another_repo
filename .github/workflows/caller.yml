@@ -1,0 +1,12 @@
+name: Use Central Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  invoke-central-workflow:
+    uses: chickendining/simple-workflow-repo/.github/workflows/central.yml@main
+    with:
+      caller_repo: "chickendining/another_repo"
