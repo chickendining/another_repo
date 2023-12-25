@@ -1,0 +1,13 @@
+name: Use Central Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  invoke-central-workflow:
+    runs-on: ubuntu-latest
+    name: Call composite workflow
+    steps:
+        - uses: chickendining/simple-workflow-repo/.github/actions/sync/action.yml@main
+          with:
+            caller_repo: "chickendining/another_repo"
